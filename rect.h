@@ -1,5 +1,7 @@
 #ifndef __RECT_H__
 #define __RECT_H__
+#include "common.h"
+
 typedef struct
 {
     i16 x0,y0;
@@ -10,4 +12,5 @@ typedef struct
 {
     i16 x,y;
 }COORD,*PCOORD;
+
 #endif
