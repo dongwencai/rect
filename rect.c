@@ -42,7 +42,7 @@ PLIST rect_dec(const PRECT pSrc,const PRECT pDst)
 {
 	RECT r;
 	PRECT pR;
-    LIST head = {0};
+    PLIST head = NULL;
 	r = get_intersect_rect(pSrc,pDst);
 	if(RECT_IS_VALID(r))
 	{
@@ -89,7 +89,7 @@ PLIST rect_dec(const PRECT pSrc,const PRECT pDst)
         *pR = *pSrc;
         list_add(&head,pR);
 	}
-	return head.next;
+	return head;
 }
 RECT get_intersect_rect(const PRECT pR0,const PRECT pR1)
 {

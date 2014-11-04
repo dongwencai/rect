@@ -10,7 +10,7 @@ void list_add(PLIST *pphead, void *date)
         newNode->date = date;
         if(*pphead)
         {
-            newNode->next = (*pphead)->next;
+            newNode->next = (*pphead);
             *pphead = newNode;
         }
         else
