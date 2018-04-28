@@ -9,4 +9,3 @@ $(OBJ):%.o:%.c
 
 clean:
 	rm -rf *.o main
-#modify by two egg
