@@ -9,3 +9,4 @@ $(OBJ):%.o:%.c
 
 clean:
 	rm -rf *.o main
+#test
